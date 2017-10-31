@@ -26,8 +26,8 @@ When the photosensor sees less light, the lights blink faster, and vice versa. I
 
 ## If you are comfortable with electronics and reading a schematic
 
-The Arduino sketch has been preloaded onto the ATTiny85 chip. Just build the circuit as the 
-schematic indicates, and the LEDs should begin blinking as soon as the chip is powered.
+The Arduino sketch has been preloaded onto the ATTiny85 chip. Just build the circuit as [the 
+schematic](spookyEyes_schem.png) indicates, and the LEDs should begin blinking as soon as the chip is powered.
 
 Want to customize the behavior? Great! We have a USB programmer so we can flash new firmware onto 
 the ATTiny super easily. Just modify the Arduino sketch and share the code with us, so we can 
