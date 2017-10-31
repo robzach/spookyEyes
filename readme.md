@@ -4,7 +4,7 @@ A (slightly) spooky project for a combined [IDeATe](http://ideate.andrew.cmu.edu
 [MechE MakerWing](https://www.cmu.edu/me/news/archive/2015/hamerschlag-makerwing.html)  Halloween 
 at Carnegie Mellon University.
 
-When the photosensor sees less light, the lights blink faster, and vice versa. It's *super scary*. We can give hugs as needed.
+When the photosensor sees less light, the lights blink faster, and vice versa. Turn the potentiometer to adjust the blinking rate. It's *super scary*. We can give hugs as needed.
 
 # Let's make it!
 
