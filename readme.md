@@ -25,11 +25,18 @@ at Carnegie Mellon University.
 The Arduino sketch has been preloaded onto the ATTiny85 chip. Just build the circuit as the 
 schematic indicates, and the LEDs should begin blinking as soon as the chip is powered.
 
+Want to customize the behavior? Great! We have a USB programmer so we can flash new firmware onto 
+the ATTiny super easily. Just modify the Arduino sketch and share the code with us, so we can 
+upload it for you. (There's a bit of setup to get the programmer to work on each machine, but if 
+you want to do the setup on your own machine that's fine too.)
+
 ## If you are newer to electronicsland
 
 ### 1. Welcome! We're glad you're here.
 
-### 2. Let's start with the ATTiny85 chip, which will drive the whole project. The one we're 
+### 2. Let's start with the ATTiny85 chip, which will drive the whole project. 
+
+The one we're 
 supplying has been pre-programmed with instructions to read the ambient light level and combine 
 that with information from the potentiometer to establish the rate at which the LEDs will blink.
 
@@ -37,7 +44,8 @@ Put the chip onto the breadboard like so:
 ![placing the chip](images/placingTheChip.jpg)
 
 **Pay attention to the dot on the chip and make sure it's in the upper left corner!** (In the 
-drawing above a half-circle is shown. This at the little dot are interchangeable.)
+schematic
+drawing a half-circle is shown. This at the little dot are interchangeable.)
 
 This tutorial refers to the *software* numbers each of the chip's 
 hardware pins use. For instance, if you make an attachment to software `pin 0`, that means the 
@@ -53,17 +61,20 @@ chip's `GND` (ground) to the column marked with – and a blue line along the br
 
 ![chip power connections](images/chipPowerConnections.jpg)
 
-### 3. Now we can add some LEDs. LEDs have a longer and a shorter leg, because they only work 
+### 3. Now we can add some LEDs. 
+
+LEDs have a longer and a shorter leg, because they only work 
 when power flows through them in the correct direction. The longer leg is the positive one, and 
 the shorter is the negative.
 
 For one LED, plug the long leg into the same row as `pin 0`, and the short leg into another row 
 on the breadboard that is not shared with any of the ATTiny pins. For the second LED, plug its 
 long leg into `pin 1` and the short leg into that same row as the other's short leg.
-![LEDs in breadboard](images/LEDsinbreadboard.jpg)
 
 Use a jumper wire to connect the short leg row to the ground column (with the – at the top and a 
 blue stripe).
+
+![LEDs in breadboard](images/LEDsinbreadboard.jpg)
 
 ### 4. Add the potentiometer
 
@@ -84,7 +95,8 @@ Use a third jumper wire to connect the potentiometer's center pin to ATTiny `pin
 Wire the 5.6kΩ resistor so one leg goes into the long column marked with the minus sign, and the 
 other leg goes into any unused row.
 
-Wire the photoresistor so that one leg goes into the long column marked with the plus sign, and 
+Then, wire the photoresistor so that one leg goes into the long column marked with the plus sign, 
+and 
 the other leg is in the same row the resistor plugs into.
 
 Use a jumper wire to connect that shared row to ATTiny `pin A2`.
@@ -100,6 +112,8 @@ negative (– sign and blue stripe) column, and its positive leg is somewhere el
 
 Then use a jumper to attach the battery's positive leg to the power (red stripe and + sign) 
 column.
+
+![battery](images/battery.jpg)
 
 The lights should start blinking, and if they don't it's time to debug!
 
