@@ -4,9 +4,13 @@ A (slightly) spooky project for a combined [IDeATe](http://ideate.andrew.cmu.edu
 [MechE MakerWing](https://www.cmu.edu/me/news/archive/2015/hamerschlag-makerwing.html)  Halloween 
 at Carnegie Mellon University.
 
+When the photosensor sees less light, the lights blink faster, and vice versa. It's *super scary*. We can give hugs as needed.
+
 # Let's make it!
 
 ## Parts list
+
+![parts](images/parts.JPG)
 
 * 1 ATTiny85 microcontroller
 * 1 5.6kΩ resistor
@@ -41,7 +45,7 @@ supplying has been pre-programmed with instructions to read the ambient light le
 that with information from the potentiometer to establish the rate at which the LEDs will blink.
 
 Put the chip onto the breadboard like so:
-![placing the chip](images/placingTheChip.jpg)
+![placing the chip](images/placingTheChip.JPG)
 
 **Pay attention to the dot on the chip and make sure it's in the upper left corner!** (In the 
 schematic
@@ -59,7 +63,7 @@ Let's give the chip power: use a jumper wire to connect the chip's `5V` pin to t
 with a + and a red line along the edge of the breadboard. Use another jumper to connect the 
 chip's `GND` (ground) to the column marked with – and a blue line along the breadboard edge.
 
-![chip power connections](images/chipPowerConnections.jpg)
+![chip power connections](images/chipPowerConnections.JPG)
 
 ### 3. Now we can add some LEDs. 
 
@@ -74,7 +78,7 @@ long leg into `pin 1` and the short leg into that same row as the other's short 
 Use a jumper wire to connect the short leg row to the ground column (with the – at the top and a 
 blue stripe).
 
-![LEDs in breadboard](images/LEDsinbreadboard.jpg)
+![LEDs in breadboard](images/LEDsinbreadboard.JPG)
 
 ### 4. Add the potentiometer
 
@@ -82,13 +86,15 @@ The potentiometer has three legs: two outsides and one in the center. Plug the p
 the breadboard so each leg is in a different row (i.e. the legs are oriented up-down along a 
 column, not left-right along a row).
 
+![pot legs](images/potLegs.JPG)
+
 Use a jumper wire to connect one of the outside legs to the long column marked with a minus sign, 
 and use a second jumper wire to connect the potentiometer's other outside leg to the long column 
 marked with a plus sign.
 
 Use a third jumper wire to connect the potentiometer's center pin to ATTiny `pin A3`.
 
-![pot wiring](images/potWiring.jpg)
+![pot wiring](images/potWiring.JPG)
 
 ### 5. Add the light sensor
 
@@ -101,7 +107,7 @@ the other leg is in the same row the resistor plugs into.
 
 Use a jumper wire to connect that shared row to ATTiny `pin A2`.
 
-![photosensor wiring](images/photosensorWiring.jpg)
+![photosensor wiring](images/photosensorWiring.JPG)
 
 ### 6. Add power and you're done!
 
@@ -110,10 +116,12 @@ Slide the battery into the battery case, with the positive side (marked with a +
 This next part is tricky: place the battery case on the breadboard so its negative leg is in the 
 negative (– sign and blue stripe) column, and its positive leg is somewhere else on the board.
 
+![battery](images/batteryLegs.JPG)
+
 Then use a jumper to attach the battery's positive leg to the power (red stripe and + sign) 
 column.
 
-![battery](images/battery.jpg)
+![battery connection](images/batteryConnection.JPG)
 
 The lights should start blinking, and if they don't it's time to debug!
 
@@ -121,3 +129,5 @@ The lights should start blinking, and if they don't it's time to debug!
 
 If you want the LEDs or light sensor to be somewhere other than the main board, simply use the 
 female–male jumper wires like extension cords. Easy!
+
+![extension](images/extension.JPG)
