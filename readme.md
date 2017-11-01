@@ -49,12 +49,13 @@ Put the chip onto the breadboard like so:
 
 **Pay attention to the dot on the chip and make sure it's in the upper left corner!** (In the 
 schematic
-drawing a half-circle is shown. This at the little dot are interchangeable.)
+drawing a half-circle is shown. This and the little dot are interchangeable and serve to mark the top of the chip.)
 
 This tutorial refers to the *software* numbers each of the chip's 
 hardware pins use. For instance, if you make an attachment to software `pin 0`, that means the 
-chip's lower right pin, which has hardware number 5. Here's a schematic of the chip showing the 
-hardware and software numbers:
+chip's lower right pin, which has hardware number 5. Below is a schematic of the chip showing the 
+hardware and software numbers; the hardware numbers are the 1–8 sequence written on the chip, and the software numbers appear in cyan and red circles.
+
 ![ATTiny85 pinout with hardware and software pin designations](images/attiny85pinout.png)
 Image from Sparkfun, shared under the [CC BY-SA 4.0 
 license](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -67,11 +68,11 @@ chip's `GND` (ground) to the column marked with – and a blue line along the br
 
 ### 3. Now we can add some LEDs. 
 
-LEDs have a longer and a shorter leg, because they only work 
+LEDs have a longer and a shorter leg, and they only work 
 when power flows through them in the correct direction. The longer leg is the positive one, and 
 the shorter is the negative.
 
-For one LED, plug the long leg into the same row as `pin 0`, and the short leg into another row 
+Get an LED and plug the long leg into the same row as `pin 0`, and the short leg into another row 
 on the breadboard that is not shared with any of the ATTiny pins. For the second LED, plug its 
 long leg into `pin 1` and the short leg into that same row as the other's short leg.
 
